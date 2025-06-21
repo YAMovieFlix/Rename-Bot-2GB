@@ -18,7 +18,7 @@ class Config(object):
     ADMIN = int(os.environ.get("ADMIN", "7525127704"))
 
     # channels
-    IS_FSUB = os.environ.get("IS_FSUB", "False").lower() == "true"  # Set "True" For Enable Force Subscribe
+    IS_FSUB = os.environ.get("IS_FSUB", "True").lower() == "true"  # Set "True" For Enable Force Subscribe
     AUTH_CHANNELS = list(map(int, os.environ.get("AUTH_CHANNELS", "-1002593221166").split())) # Add Multiple Channels iD By Space
     LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002433152779"))
     BIN_CHANNEL = int(os.environ.get("BIN_CHANNEL", "-1002433152779"))
@@ -29,7 +29,7 @@ class Config(object):
 
 class Txt(object):
     # part of text configuration
-    START_TXT = """{"👋 Hello Developer {user.mention} \n\nI am an Advance file Renamer and file Converter BOT with Custom thumbnail support.\n\nSend me any video or document !"},
+    START_TXT = "{👋 Hello Developer {user.mention} \n\nI am an Advance file Renamer and file Converter BOT with Custom thumbnail support.\n\nSend me any video or document !},
 
 𝖴𝗌𝗂𝗇𝗀 𝗍𝗁𝗂𝗌 𝖻𝗈𝗍 𝗒𝗈𝗎 𝖼𝖺𝗇 𝗋𝖾𝗇𝖺𝗆𝖾 𝖺𝗇𝖽 𝖼𝗁𝖺𝗇𝗀𝖾 𝗍𝗁𝗎𝗆𝖻𝗇𝖺𝗂𝗅 𝗈𝖿 𝗒𝗈𝗎𝗋 𝖿𝗂𝗅𝖾𝗌. 𝖠𝗇𝖽 𝗒𝗈𝗎 𝖼𝖺𝗇 𝖺𝗅𝗌𝗈 𝖼𝗈𝗇𝗏𝖾𝗋𝗍 𝗏𝗂𝖽𝖾𝗈 𝗍𝗈 𝖿𝗂𝗅𝖾 𝖺𝗇𝖽 𝖿𝗂𝗅𝖾 𝗍𝗈 𝗏𝗂𝖽𝖾𝗈.
 
